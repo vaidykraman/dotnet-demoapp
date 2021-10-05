@@ -1,5 +1,0 @@
-harnessApiVersion: '1.0'
-type: APPLICATION
-branchName: master
-gitConnector: GitHub-DotNet
-isGitSyncEnabled: true
