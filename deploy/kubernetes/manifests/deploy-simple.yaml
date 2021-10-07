@@ -19,7 +19,8 @@ spec:
     spec:
       containers:
         - name: demo
-          image: bcdemo.azurecr.io/temp/demoapp:latest  
-
+          image: cgdemoworkload.azurecr.io/dotnet-demoapp:latest  
           ports:
             - containerPort: 5000
+      imagePullSecrets:
+      - name: regcred
