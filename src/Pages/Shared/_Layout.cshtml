@@ -36,16 +36,13 @@
 
     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
       <div class="navbar-nav">
-        <a href="/info" class="btn btn-info btn-lg" type="button"><i class="fas fa-info-circle"></i> Info</a>
+        <a href="/info" class="btn btn-info btn-lg" type="button"><i class="fas fa-info-circle"></i>Container Info</a>
         &nbsp;
         <a href="/monitor" class="btn btn-info btn-lg" type="button"><i class="fas fa-chart-line"></i> Monitoring</a>        
         &nbsp;
-        <a href="/tools" class="btn btn-info btn-lg" type="button"><i class="fas fa-wrench"></i> Tools</a> 
-        @if (@Configuration.GetSection("Weather").Exists() && Configuration.GetSection("Weather").GetValue<String>("ApiKey") != "") 
-        { 
-          @:&nbsp;
+        <!--<a href="/tools" class="btn btn-info btn-lg" type="button"><i class="fas fa-wrench"></i> Tools</a> 
+       &nbsp;-->
           <a href="/weather" class="btn btn-info btn-lg" type="button"><i class="fas fa-cloud-sun-rain"></i> Weather</a>           
-        }
       </div>
 
       <!-- User login button -->
